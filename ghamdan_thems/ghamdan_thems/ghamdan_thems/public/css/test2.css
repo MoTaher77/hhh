@@ -1,0 +1,173 @@
+:root {
+	--bg-color: #f5f6f8;
+	--btn-primary: #0056b3;
+	--btn-secondary: #6c757d;
+	--secondary: #198754;
+	--navbar-bg: #343a40;
+	--text-btn-color: #ffffff;
+	--table-border-color: #d6d8db;
+	--btn-default-hover-bg: #e9ecef;
+	--sidebar-select-color: hwb(74 22% 27% / 0.125);
+	--checkbox-gradient: linear-gradient(180deg, #0056b3 -124.51%, #0056b3 100%);
+	--text-base: 14px;
+}
+
+/* Global Background and Typography */
+body, .page-container {
+	background-color: var(--bg-color);
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--text-base);
+	color: #212529;
+}
+
+.page-head {
+	background-color: #ffffff;
+	border-bottom: 1px solid var(--table-border-color);
+}
+
+/* Navbar Design */
+.navbar {
+	background-color: var(--navbar-bg);
+}
+
+.navbar .nav-link,
+.navbar .nav-item button {
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-item button:hover {
+	color: #adb5bd;
+}
+
+/* Buttons */
+.btn {
+	border-radius: 0.35rem;
+	font-weight: 500;
+}
+
+.btn.btn-primary {
+	background-color: var(--btn-primary);
+	border-color: var(--btn-primary);
+	color: var(--text-btn-color);
+}
+
+.btn.btn-primary:hover {
+	background-color: #004085;
+	border-color: #004085;
+}
+
+.btn.btn-secondary {
+	background-color: var(--btn-secondary);
+	border-color: var(--btn-secondary);
+	color: var(--text-btn-color);
+}
+
+.btn.btn-secondary:hover {
+	background-color: #5a6268;
+	border-color: #545b62;
+}
+
+/* Login Page */
+[data-path="login"] .navbar-light {
+	background-color: #ffffff;
+	border-bottom: 1px solid var(--table-border-color);
+}
+
+[data-path="login"] .web-footer {
+	border-top: 1px solid var(--table-border-color);
+}
+
+.for-login .page-card {
+	background-color: #ffffff;
+	border: 1px solid var(--table-border-color);
+}
+
+.for-login .btn-login {
+	background-color: var(--btn-primary);
+	border: none;
+	color: var(--text-btn-color);
+}
+
+.for-login .btn-login:hover {
+	background-color: #004085;
+}
+
+.for-login .form-control {
+	background-color: #ffffff;
+	border: 1px solid var(--table-border-color);
+}
+
+.for-login .form-control:focus,
+.for-login .form-control:hover {
+	box-shadow: 0 0 0 2px var(--btn-primary);
+	border-color: var(--btn-primary);
+}
+
+/* Form Design */
+.form-control {
+	background-color: #ffffff;
+	border: 1px solid var(--table-border-color);
+}
+
+.form-control:focus {
+	box-shadow: 0 0 0 2px var(--btn-primary);
+	border-color: var(--btn-primary);
+}
+
+/* Table Design */
+.datatable .dt-cell {
+	background-color: #ffffff;
+	border: 1px solid var(--table-border-color);
+}
+
+.list-row-container .list-row:hover {
+	background-color: var(--sidebar-select-color);
+}
+
+/* Checkbox */
+input[type="checkbox"]:checked {
+	background-color: var(--btn-primary);
+	background-image: url("data:image/svg+xml, <svg viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 4.00001L2.66667 5.80001L7 1.20001' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+	border: none;
+}
+
+/* Dashboard Widgets */
+.widget.links-widget-box,
+.widget.dashboard-widget-box {
+	border: 1px solid var(--table-border-color);
+	background-color: #ffffff;
+}
+
+.widget.links-widget-box .widget-head .widget-title {
+	color: var(--btn-primary);
+	font-weight: 500;
+}
+
+/* Sidebar Design */
+.sidebar {
+	background-color: #bfba86;
+	border-right: 1px solid var(--table-border-color);
+}
+
+.sidebar-item.active {
+	background-color: var(--sidebar-select-color);
+	color: var(--btn-primary);
+}
+
+/* POS Design */
+.point-of-sale-app section {
+	min-height: 40rem;
+	background-color: #ffffff;
+	border: 1px solid var(--table-border-color);
+}
+
+/* General Improvements */
+.awesomplete [role="option"]:hover {
+	background-color: var(--btn-default-hover-bg);
+}
+
+.grid-row-open {
+	box-shadow: 0 0 0 3px var(--btn-primary);
+}

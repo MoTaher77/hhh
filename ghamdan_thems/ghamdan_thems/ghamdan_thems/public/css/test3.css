@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #6C63FF;
+    --secondary-color: #232F34;
+    --accent-color: #FF6F61;
+    --background-color: #F8F9FA;
+    --text-color: #212529;
+    --text-light: #868E96;
+    --border-color: #E0E0E0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --button-hover-bg: #5A54DB;
+    --input-focus: #B3B2FF;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+.navbar a {
+    color: white;
+}
+.navbar a:hover {
+    color: var(--background-color);
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    padding: 1em;
+}
+.sidebar a {
+    color: var(--text-light);
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+.sidebar a:hover, .sidebar a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button:hover, .btn:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Inputs */
+input, textarea, select {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--input-focus);
+    box-shadow: 0 0 4px var(--input-focus);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+}
+table th, table td {
+    border: 1px solid var(--border-color);
+    padding: 0.75em;
+    text-align: left;
+}
+table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+table tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    border-radius: 6px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* Modals */
+.modal {
+    background-color: white;
+    border-radius: 6px;
+    padding: 2em;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
